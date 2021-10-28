@@ -17,7 +17,7 @@ app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
 
-app.use("/prod", productController);
+app.use("/", productController);
 
 let listener = app.listen(9703, async ()=>{
     await connect();

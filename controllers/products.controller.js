@@ -3,7 +3,7 @@ const router = express.Router();
 const Product = require("../models/product.model");
 
 
-router.get("/index", (req,res)=>{
+router.get("/", (req,res)=>{
     return res.render("products/index.ejs");
 })
 
