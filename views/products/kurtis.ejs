@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/static/products/index.css" />
+
+    <link
+      rel="icon"
+      href="https://seeklogo.com/images/F/flipkart-logo-3F33927DAA-seeklogo.com.png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/9b8f2f2bcf.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/static/products/kurtis.css">
+  </head>
+<body>
+  <!-- popup  html-->
+  <div class="offer_popup" style="display: none">
+    <div id="parent">
+      <div class="box1">
+        <h2>Looks like</h2>
+        <h2>You're new here!</h2>
+        <div>
+          <p>Sign up with your mobile</p>
+          <p>number to get started</p>
+        </div>
+
+        <div>
+          <img class="image"
+            src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/login_img_c4a81e.png" />
+        </div>
+      </div>
+
+      <div class="box2">
+        <form id="signupform">
+          <div class="font">Name</div>
+          <div>
+            <input autocomplete="off" type="text" id="inputcontrol" placeholder="Enter your Name" />
+          </div>
+
+          <div class="font">Email</div>
+          <div>
+            <input autocomplete="off" type="text" id="inputcontrol1" placeholder="Type email id" />
+          </div>
+
+          <div class="font">Password</div>
+          <div>
+            <input autocomplete="off" type="password" id="inputcontrol2" placeholder="type password" />
+          </div>
+        </form>
+
+        <div class="terms">
+          <span class="grey">By continuing, you agree to Flipkart's</span><span class="blue">Terms of Use</span><span
+            class="grey"> and</span><span class="blue"> Privacy</span>
+          <div class="blue">Policy.</div>
+        </div>
+
+        <div>
+          <button onclick="signup()" id="loginn" class="continue">
+            CONTINUE
+          </button>
+        </div>
+
+        <div>
+          <button id="loginnn" class="existing">Existing User? Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="offer_popup1" style="display: none">
+    <div id="parentt">
+      <div class="box1">
+        <h1>Login</h1>
+        <div>
+          <p>Get access to your</p>
+          <p>Orders, Wishlist and</p>
+          <p>Recommendations</p>
+        </div>
+
+        <div>
+          <img class="image"
+            src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/login_img_c4a81e.png" />
+        </div>
+      </div>
+
+      <div class="box2">
+        <form id="loginform">
+          <div class="font">Enter Email/Mobile Number</div>
+          <div>
+            <input autocomplete="off" type="text" id="inputcontroll" />
+          </div>
+
+          <div class="font" 1>Enter Password</div>
+          <div>
+            <input autocomplete="off" type="password" id="inputcontroll1" />
+          </div>
+        </form>
+
+        <div class="terms">
+          <span class="grey">By continuing, you agree to Flipkart's</span><span class="blue">Terms of Use</span><span
+            class="grey"> and</span><span class="blue"> Privacy</span>
+          <div class="blue">Policy.</div>
+        </div>
+
+        <div>
+          <button onclick="login()" id="finishh" class="loginButton">
+            Login
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header>
+    <div class="navbar-left">
+      <img class="logo"
+        src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png" />
+
+      <div class="navbar-left-p">
+        <p onclick="goKurtisPage()">
+          <img class="plus" width="10"
+            src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/plus_aef861.png" />
+          <span>Plus</span> <a href="#">Explore</a>
+        </p>
+      </div>
+    </div>
+    <div class="navbar-center">
+      <input class="navbar-center-input" type="text" placeholder="Search for products,Brands and more" />
+      <i class="fas fa-search"></i>
+    </div>
+    <div class="navbar-right">
+      <a id="show" class="active">Login </a>
+      <a href="#">more<i class="fas fa-caret-down"></i>
+        <div id="block" class="dropdown-content"></div>
+      </a>
+      <a href="#">
+        <div onclick="showcart()" id="redd"></div>
+        <i class="fas fa-shopping-cart"></i>cart
+      </a>
+    </div>
+  </header>
+  <div id="mainCont">
+    <div id="functions">
+      <div class="srtingOptions">
+        <h3>FILTER BY:</h3>
+        <h4>Brand</h4>
+        <hr />
+        <p>
+          <span><input type="checkbox" name="" id="c1" /></span>LIBA
+        </p>
+        <p>
+          <span><input type="checkbox" name="" id="c2" /></span>W
+        </p>
+        <p>
+          <span><input type="checkbox" name="" id="c3" /></span>HETSA
+        </p>
+        <p>
+          <span><input type="checkbox" name="" id="c4" /></span>COLOR PLUS
+        </p>
+        <h4>Price</h4>
+        <hr />
+        <p>
+          <span><input type="checkbox" name="" id="c5" /></span>Upto 500
+        </p>
+        <p>
+          <span><input type="checkbox" name="" id="c6" /></span>500-1500
+        </p>
+        <p>
+          <span><input type="checkbox" name="" id="c7" /></span>Above 1500
+        </p>
+        <h4>Color</h4>
+        <hr />
+        <p>
+          <span><input type="checkbox" name="" id="c8" /></span>Black
+        </p>
+        <p>
+          <span><input type="checkbox" name="" id="c9" /></span>Yellow
+        </p>
+        <p>
+          <span><input type="checkbox" name="" id="c10" /></span>Pink
+        </p>
+        <hr />
+        <br />
+        <h3>SORT BY:</h3>
+        <h4>PRICE</h4>
+        <p>
+          <span><input type="checkbox" name="" id="c11" /></span>Low to high
+        </p>
+      </div>
+    </div>
+
+    <div id="productPage"></div>
+  </div>
+</body>
+
+</html>
+<script src="/static/products/cart.js"></script>
+<script src="/static/products/index.js"></script>
+<script src="/static/products/login.js"></script>
+<script src="/static/products/sign.js"></script>
+<script src="/static/products/kurtis.js"></script>

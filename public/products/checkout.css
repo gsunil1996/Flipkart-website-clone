@@ -1,0 +1,374 @@
+.container {
+  display: grid;
+  margin: 20px 40px 10px 40px;
+  padding: auto;
+  height: 100vh;
+  width: 60%;
+  grid-template-columns: 4fr;
+  grid-template-rows: 0.5fr 4fr 4fr 1fr;
+  grid-gap: 20px;
+  grid-template-areas:
+    "login  "
+    "ad "
+    "payment "
+    "footer ";
+}
+.login,
+.login2,
+.login3 {
+  grid-area: login;
+  box-shadow: 0px 0px 5px 3px rgb(226, 224, 224);
+  border-bottom: 1px solid #dddcdc;
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 10px;
+  height: 50px;
+}
+.login2 {
+  display: none;
+}
+
+.log {
+  color: #878787;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.tik {
+  vertical-align: top;
+  height: 20px;
+  margin-left: 8px;
+}
+.ad {
+  grid-area: ad;
+  box-shadow: 0px 0px 5px 4px rgb(226, 224, 224);
+  border-bottom: 1px solid #dddcdc;
+  background-color: white;
+  margin-bottom: 20px;
+}
+.delivery {
+  background-color: #2874f0;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 14px 24px;
+  border-radius: 2px 2px 0 0;
+  height: 50px;
+}
+
+/* /address form/ */
+.navbar-leftt {
+  width: 10%;
+  text-align: left;
+  margin: 5px 1270px 5px 0 !important;
+  cursor: pointer;
+}
+.navbar-leftt a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+.check a {
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+.check span {
+  color: yellow;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+.check:hover {
+  text-decoration: underline;
+  color: white;
+}
+.check p {
+  display: flex;
+  flex-direction: row-reverse !important;
+  margin: 0;
+  margin-right: 85px !important;
+}
+.logoo {
+  width: 75px;
+  height: 20px;
+  margin: 5px 0 0 0;
+}
+header {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #2874f0;
+  width: 100%;
+  height: 56px;
+  position: sticky;
+  z-index: 2;
+  top: 0px;
+  box-sizing: border-box;
+  padding-bottom: 5px;
+}
+
+.main {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1 fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  grid-template-areas:
+    "name mob"
+    "pin house"
+    "city state"
+    "landmark altnum"
+    "submit submit";
+  justify-content: center;
+  padding: 20px;
+  margin-left: 50px;
+  width: 60%;
+}
+* {
+  justify-content: center;
+}
+
+.main > input[type="text"]:focus {
+  outline: 2px solid #00a2ff;
+}
+.main input {
+  height: 40px;
+  width: 300px;
+}
+input::placeholder {
+  padding-left: 10px;
+}
+.name,
+.mobile,
+.pin,
+.house-name,
+.city,
+.state,
+.submitt {
+  border: 1px solid rgb(226, 225, 225);
+  height: 30px;
+  width: 200px;
+}
+
+.name {
+  grid-area: name;
+}
+.mobile {
+  grid-area: mob;
+}
+.pin {
+  grid-area: pin;
+}
+.house-name {
+  grid-area: house;
+}
+.city {
+  grid-area: city;
+}
+.state {
+  grid-area: state;
+}
+
+.submitt {
+  background: #fb641b;
+  display: block;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+  color: #fff;
+  height: 45px !important;
+  width: 145px;
+  box-sizing: border-box;
+  padding: 0 15px;
+  margin: 10px 0 10px 25px;
+  font-size: 13px;
+  border-radius: 3px;
+}
+
+.submitt:hover {
+  background-color: #45a049;
+}
+
+/* /payment/ */
+
+body {
+  font-family: sans-serif;
+  font-size: 17px;
+  padding: 8px;
+  background-color: rgb(235, 235, 235);
+  width: 125%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  margin: 0 -16px;
+}
+
+.col {
+  padding: 0 16px;
+  flex: 50%;
+}
+
+.payment input[type="text"] {
+  width: 50%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.payment input[type="text"]:focus {
+  outline: 1px solid #0099ff;
+}
+
+.payment label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+#btn {
+  background-color: #fb641b;
+  color: white;
+  padding: 5px 37px !important;
+  font-size: 14px !important;
+  border: none;
+  width: 24%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+  box-shadow: 0 1px 2px 2px rgb(0 0 0 / 20%);
+  width: 150px;
+  margin: 10px 0 10px 25px;
+  border-radius: 3px;
+}
+#btn1 {
+  background-color: #f19a6f;
+  box-sizing: border-box;
+  color: white;
+  padding: 15px 15px !important;
+  font-size: 12px !important;
+  border: none;
+  width: 24%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+  box-shadow: 0 1px 2px 2px rgb(0 0 0 / 20%);
+  width: 150px;
+  margin: 10px 0 10px 20px;
+  border-radius: 3px;
+}
+
+#btn:hover {
+  background-color: #45a049;
+}
+
+/* /footer/ */
+
+.footer {
+  grid-area: footer;
+  display: flex;
+}
+.ftext {
+  margin-left: 300px;
+}
+.ftext a {
+  color: #2874f0;
+  text-decoration: none;
+}
+#rowLayout {
+  display: flex;
+  flex-direction: row;
+  width: 125%;
+}
+.A {
+  width: 65%;
+}
+.B {
+  width: 24%;
+  margin: 0 2%;
+  box-shadow: 0px 0px 5px 4px rgb(226, 224, 224) !important;
+  background-color: white;
+  height: 350px;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-left: 20px;
+}
+
+.payment {
+  padding: 5px 20px 15px 20px;
+  border-radius: 3px;
+  display: none;
+  margin: 20px 40px 0 0px;
+  padding: auto;
+  width: 100%;
+  box-shadow: inset 0px 0px 5px 0.1px rgb(226, 226, 226);
+  border-bottom: 1px solid #d3d0d0;
+  grid-area: payment;
+  box-shadow: 0px 0px 5px 4px rgb(226, 224, 224) !important;
+  background-color: white !important;
+}
+.paymentt {
+  padding: 5px 20px 15px 20px;
+  border-radius: 3px;
+  display: block;
+  margin: 40px 0 0 0px;
+  width: 96%;
+  height: 50px;
+  box-shadow: 0px 0px 5px 4px rgb(226, 224, 224) !important;
+  border-bottom: 1px solid #d3d0d0;
+  box-sizing: content-box;
+  background-color: white;
+
+  color: #575454;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.bill {
+  margin-bottom: 50px;
+  font-size: 18px;
+  line-height: 1.3cm;
+}
+.text {
+  color: gray;
+  margin-left: -20px;
+  font-size: 14px;
+}
+.sticker {
+  width: 350px;
+  height: 90px;
+  margin: 0px -20px;
+  margin-bottom: 20px;
+}
+.apply {
+  background-color: #fb641b;
+  color: white;
+  border: none;
+  box-sizing: border-box;
+  padding: 7px 5px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.input {
+  height: 30px;
+  width: 70%;
+}
+.details > p {
+  color: black !important;
+}
+.details > p:nth-child(1),
+.details > p:nth-child(2) {
+  font-size: 16px;
+  line-height: 0.5cm;
+  margin: 10px 0;
+  color: gray !important;
+}
+.details > p > span {
+  color: green;
+}

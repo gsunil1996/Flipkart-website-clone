@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://seeklogo.com/images/F/flipkart-logo-3F33927DAA-seeklogo.com.png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/9b8f2f2bcf.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/products/cart.css" />
+    <script
+      src="https://kit.fontawesome.com/9b8f2f2bcf.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <header>
+        <div class="navbar-left">
+          <img
+            class="logo"
+            src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png"
+          />
+
+          <div class="navbar-left-p">
+            <p onclick="goindex()">
+              <img
+                class="plus"
+                width="10"
+                src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/plus_aef861.png"
+              />
+              <span>Plus</span> <a href="#">Explore</a>
+            </p>
+          </div>
+        </div>
+        <div class="navbar-center">
+          <input
+            class="navbar-center-input"
+            type="text"
+            placeholder="Search for products,Brands and more"
+          />
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="navbar-right">
+          <a id="show" class="active" href="#">Logout </a>
+          <a href="#"
+            >more<i class="fas fa-caret-down"></i>
+            <div id="block" class="dropdown-content"></div>
+          </a>
+          <a href="#"
+            ><div id="redd"></div>
+            <i class="fas fa-shopping-cart"></i>cart</a
+          >
+        </div>
+      </header>
+    </header>
+    <head>
+      <div class="overlay"></div>
+    </head>
+
+    <div class="products"></div>
+  </body>
+</html>
+<script src="/static/products/cart.js"></script>
+<script src="/static/products/index.js"></script>

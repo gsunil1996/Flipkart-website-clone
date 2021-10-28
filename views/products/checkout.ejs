@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet" />
+  <link rel="icon" href="https://seeklogo.com/images/F/flipkart-logo-3F33927DAA-seeklogo.com.png" type="image/x-icon" />
+  <link rel="stylesheet" href="/static/products/checkout.css"/>
+  <link rel="stylesheet" href="/static/products/index.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <!-- navbar -->
+  <header class="heading">
+    <div class="navbar-leftt">
+      <img class="logoo"
+        src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png" />
+
+      <div class="check">
+        <p onclick="toIndex()">
+          <img class="pluss" width="10"
+            src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/plus_aef861.png" />
+          <span>Plus</span> <a href="#">Explore</a>
+        </p>
+      </div>
+    </div>
+  </header>
+  <!-- navbar finish -->
+  <div class="container">
+    <div id="rowLayout">
+      <div class="A">
+        <div class="login">
+          <div class="log">
+            LOGIN<svg height="10" width="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="tik">
+              <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" stroke="#2974f0"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="login2">
+          <div class="log">
+            DELIVERY ADDRESS<svg height="10" width="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+              class="tik">
+              <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" stroke="#2974f0"></path>
+            </svg>
+          </div>
+        </div>
+
+        <div class="ad">
+          <div class="delivery">DELIVERY ADDRESS</div>
+
+          <div class="address">
+            <form class="main">
+              <input class="ip" type="text" required id="fname" name="fullname" placeholder="Full name*" />
+
+              <input class="ip" type="text" id="email" name="email" placeholder="abc@mail.com" />
+
+              <input class="ip" type="text" required id="adr" name="address"
+                placeholder="House number, Street number etc.* " />
+
+              <input class="ip" type="text" required id="city" name="city" placeholder="City*" />
+
+              <div class="zipcode">
+                <input class="ip" type="number" id="zip" required name="zip" placeholder="Pin code*" />
+              </div>
+              <div class="mobile">
+                <input class="ip" type="number" required id="mobile" name="mobile" placeholder="Mobile*" />
+              </div>
+              <button type="submit" class="submitt">ADD ADDRESS</button>
+            </form>
+
+          </div>
+
+        </div>
+        <div class="login3">
+          <div class="log">
+            CONFIRM PAYMENT
+          </div>
+        </div>
+
+        <form class="payment">
+          <div class="row">
+            <div class="col">
+              <h3>Payment</h3>
+              <label for="fname">Accepted Cards</label>
+              <div class="icon-container">
+                <i class="fa fa-cc-visa" style="color: navy"></i>
+                <i class="fa fa-cc-amex" style="color: blue"></i>
+                <i class="fa fa-cc-mastercard" style="color: red"></i>
+                <i class="fa fa-cc-discover" style="color: orange"></i>
+              </div>
+              <label for="cname">Name on Card</label>
+              <input type="text" id="cname" required name="cardname" placeholder="Card holder name" />
+              <label for="ccnum"> Card number</label>
+              <input type="text" id="ccnum" required name="cardnumber" placeholder="1111-2222-3333-4444" />
+              <label for="expmonth">Exp Month</label>
+              <input type="text" id="expmonth" required name="expmonth" placeholder="September" />
+              <label for="cvv">Name on Card</label>
+              <input type="text" id="cvv" name="cvv" placeholder="CVV" />
+              <div class="row">
+                <div class="col">
+                  <label for="expyear">Exp Year</label>
+                  <input type="text" required id="expyear" name="expyear" placeholder="2018" />
+                </div>
+                <div class="col">
+                  <label for="cvvNo">CVV</label>
+                  <input type="text" id="cvvNo" name="cvvNo" placeholder="352" required />
+                </div>
+              </div>
+            </div>
+          </div>
+          <button id="btn">CONFIRM PAYMENT</button>
+        </form>
+
+      </div>
+      <div class="B">
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+</html>
+<script src="/static/products/checkout.js"></script>
