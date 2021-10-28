@@ -1,6 +1,9 @@
 const express = require("express");
 //const fs = require('fs');
 
+require("dotenv").config();
+
+
 const path = require("path");
 const connect = require("./configs/db");
 const productController = require("./controllers/products.controller");
@@ -19,7 +22,9 @@ app.set("view engine", "ejs");
 
 app.use("/", productController);
 
-let listener = app.listen(9703, async ()=>{
+const port = process.env.PORT || 9703;
+
+let listener = app.listen(port, async ()=>{
     await connect();
     console.log("Listening on Port 9703");
 })
